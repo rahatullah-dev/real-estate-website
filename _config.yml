@@ -1,0 +1,15 @@
+theme: jekyll-theme-minimal
+title: Real Estate Website
+description: A modern and responsive real estate website
+url: https://rahatullah-dev.github.io
+baseurl: /real-estate-website
+
+# Build settings
+markdown: kramdown
+exclude:
+  - .github
+  - mail.php
+
+# Deploy settings
+plugins:
+  - jekyll-seo-tag
