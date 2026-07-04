@@ -4891,6 +4891,76 @@ textarea.is-invalid {
           transform: translateY(0);
 }
 
+/* WhatsApp Button */
+.whatsapp-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 90px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  z-index: 10000;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  background: var(--white-color);
+  border: 2px solid #25D366;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn i {
+  position: absolute;
+  font-size: 26px;
+  color: #25D366;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-btn svg {
+  color: #25D366;
+  border-radius: 50%;
+  background: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.whatsapp-btn svg path {
+  fill: none;
+}
+
+.whatsapp-btn .progress-circle path {
+  stroke: #25D366;
+  stroke-width: 20px;
+  box-sizing: border-box;
+  -webkit-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+.whatsapp-btn:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #25D366;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-btn:hover i {
+  color: var(--white-color);
+}
+
+.whatsapp-btn:hover svg path {
+  stroke: var(--white-color);
+}
+
 /*------------------- 3.3. Titles -------------------*/
 .sec-title {
   margin-bottom: calc(var(--section-title-space) - 16px);
